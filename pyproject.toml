@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "field4ming-compilerfuse_jd233"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别编译器与算子融合专家·标注一致性与标注者偏差上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "field4ming" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://field4ming.github.io"
+Repository = "https://github.com/field4ming/compilerfuse_jd233"
+Issues = "https://github.com/field4ming/compilerfuse_jd233/issues"
+
+[project.scripts]
+compilerfuse_jd233 = "compilerfuse_jd233:main"
+
+[tool.setuptools]
+py-modules = ["compilerfuse_jd233"]
